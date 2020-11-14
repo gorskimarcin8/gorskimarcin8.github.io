@@ -1,13 +1,41 @@
 @import "~normalize.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap");
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/hero.scss";
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  font-family: Nunito, sans-serif;
+  color: $deafult;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #234361;
+}
+
+.email__button {
+  display: block;
+  width: 278px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 64px;
+  text-align: center;
+  background: $link;
+  color: $white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 48px auto;
 }
