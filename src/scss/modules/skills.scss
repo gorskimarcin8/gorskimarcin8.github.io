@@ -1,0 +1,44 @@
+.skills {
+  background-color: $blue;
+  color: $white;
+  &__header {
+    color: $white;
+    line-height: 48px;
+    font-size: 36px;
+    margin: 0 auto;
+  }
+  &__section {
+    text-align: center;
+    padding:2px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 44px;
+    margin: 0 auto 8px auto;
+  }
+  &__title--emoji {
+    display: block;
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 16px;
+    margin-top: 64px;
+  }
+}
+
+ul {
+  margin-top: 24px;
+  margin-bottom: 0;
+  padding-inline-start: 22px;
+}
+
+ul li::marker {
+  content: "✔    ";
+  color: #06C847;
+  }
+
+li {
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 12px 0px;
+}

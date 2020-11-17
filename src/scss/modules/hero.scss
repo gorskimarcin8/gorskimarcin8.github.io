@@ -1,10 +1,10 @@
 .hero {
-  height: 720px;
-  padding: 74px 16px;
+  min-height: 720px;
   &__welcome--container {
     display: none;
   }
   &__image--container {
+    margin-top: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
