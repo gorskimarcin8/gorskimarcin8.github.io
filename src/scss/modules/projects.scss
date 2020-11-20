@@ -1,0 +1,66 @@
+.projects__grid {
+  overflow: hidden;
+  background-color: $grey;
+  border-radius: 16px;
+}
+
+.project {
+  font-family: Roboto Mono;
+
+  &__window {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    padding: 16px;
+    background-color: $darkGrey;
+
+    &--dot {
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin: 0 8px 0 0;
+      background-color: $lightGrey;
+    }
+  }
+
+  &__container {
+    text-align: left;
+    padding: 24px 16px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    column-gap: 8px;
+  }
+
+  &__label {
+    display: block;
+    text-align: right;
+    color: $projectLabelGray;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  &__link,
+  &__name,
+  &__info {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  &__link {
+    color: $linkTurquoise;
+  }
+
+  &__name {
+    color: $white;
+  }
+
+  &__info {
+    color: $projectInfoGrey;
+  }
+}
