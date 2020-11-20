@@ -1,0 +1,58 @@
+.contact {
+  background-color: $contactBackgroundBlue;
+  &__header {
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0 auto 32px auto;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 56px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $white;
+    padding: 0;
+    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+    margin: 0 12px;
+
+    &::marker {
+      content: "";
+    }
+    &__icon {
+      display: block;
+      margin: auto;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.email__button--contact {
+  display: block;
+  width: 278px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 64px;
+  text-align: center;
+  background: $link;
+  color: $white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 64px auto 0 auto;
+}

@@ -22,13 +22,7 @@
       color: $blue;
     }
   }
-  &__paragraph {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-    &--highlighted {
-        color: $link;
-      }
+  &__paragraph--highlighted {
+    color: $link;
   }
-  
 }
