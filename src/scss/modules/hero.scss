@@ -1,7 +1,38 @@
 .hero {
-  min-height: 720px;
+
+
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+
+
   &__welcome--container {
-    display: none;
+    display: none; 
+    @media (min-width: $desktop){
+      display: block;
+      width: 210px;
+      background-color: $blue;
+      color: $white;
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-weight: bold;
+      font-size: 28px;
+      position: relative;
+      left: calc(50% + 84px);
+      top: 50px;
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 17.42px;
+        height: 22.66px;
+        background: url('../assets/icons/tick.svg');
+        top: 100%;
+        left: 32px;
+      }
+    }
   }
   &__image--container {
     margin-top: 24px;
@@ -15,9 +46,19 @@
     border: 16px solid #f6f9fd;
     width: 96px;
     height: 96px;
+    @media (min-width: $tablet){
+      width: 168px;
+      height: 168px;
+      border: 22px solid #f6f9fd;
+    }
   }
 
   &__header {
+    @media (min-width: $tablet){
+      font-size: 32px;
+      line-height: 40px;  
+      margin: 28px auto 28px auto;
+    }
     &--highlighted {
       color: $blue;
     }

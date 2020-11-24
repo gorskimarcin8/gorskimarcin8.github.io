@@ -1,15 +1,27 @@
 .skills {
   background-color: $blue;
   color: $white;
+  &__grid {
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
   &__header {
     color: $white;
     line-height: 48px;
     font-size: 36px;
     margin: 0 auto;
+    @media (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
+
   &__section {
     text-align: center;
-    padding:2px;
+    padding: 2px;
   }
   &__title {
     font-size: 24px;
@@ -26,17 +38,27 @@
 }
 
 ul {
-  margin-top: 24px;
-  margin-bottom: 0;
+  width: 288px;
+  margin: 24px auto 0px auto;
   padding-inline-start: 22px;
 }
 
-ul li::marker {
+.skills__item--know::marker {
   content: "✔    ";
-  color: #06C847;
-  }
+  color: #06c847;
+}
+
+.skills__item--something::marker {
+  content: "✔    ";
+  color: $white;
+}
+
+.skills__item--toLearn::marker {
+  color: $white;
+}
 
 li {
+  width: 255px;
   text-align: left;
   font-size: 16px;
   line-height: 24px;

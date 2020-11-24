@@ -21,7 +21,7 @@
     <main>
       <section class="hero">
         <div class="hero__welcome--container">
-          <span class="hero__welcome">Hello there! 👋</span>
+          <span class="hero__welcome">Hey there! 👋</span>
         </div>
         <div class="hero__image--container">
           <img
@@ -43,7 +43,7 @@
             <a href="#skills" class="hero__paragraph--highlighted">skills</a>. Don’t
             forget to have a glimpse at
             <a href="#projects" class="hero__paragraph--highlighted">my projects</a>.
-            Currently I’m looking for a new challenges so if you have one -
+            Currently I’m looking for new challenges so if you have one -
             <a href="#contact" class="hero__paragraph--highlighted">contact me</a> 😊
           </p>
           <a href="mailto:gorskimarcin8@gmail.com" class="email__button"
@@ -53,20 +53,21 @@
       </section>
       <section class="skills" id="skills">
         <h1 class="skills__header">My skills</h1>
+        <div class="skills__grid">
         <section class="skills__section">
           <h2 class="skills__title">
             <span class="skills__title--emoji">💪</span>Working knoweldge
-          </h2>
+          </h2> 
           <ul>
-            <li>Semantic HTML5</li>
-            <li>Flexbox</li>
-            <li>CSS grid</li>
-            <li>Markdown</li>
-            <li>JS: Local storage</li>
-            <li>Figma</li>
-            <li>Forms</li>
-            <li>JS: DOM manipulations</li>
-            <li>SASS</li>
+            <li class="skills__item--know">Semantic HTML5</li>
+            <li class="skills__item--know">Flexbox</li>
+            <li class="skills__item--know">CSS grid</li>
+            <li class="skills__item--know">Markdown</li>
+            <li class="skills__item--know">JS: Local storage</li>
+            <li class="skills__item--know">Figma</li>
+            <li class="skills__item--know">Forms</li>
+            <li class="skills__item--know">JS: DOM manipulations</li>
+            <li class="skills__item--know">SASS</li>
           </ul>
         </section>
         <section class="skills__section">
@@ -74,13 +75,13 @@
             <span class="skills__title--emoji">🤔</span>Know something about
           </h2>
           <ul>
-            <li>JavaScript E56 + features</li>
-            <li>CSS animations</li>
-            <li>Working with API</li>
-            <li>NPM Scripts</li>
-            <li>Progressive web apps</li>
-            <li>Git</li>
-            <li>Accessibility</li>
+            <li class="skills__item--something">JavaScript E56 + features</li>
+            <li class="skills__item--something">CSS animations</li>
+            <li class="skills__item--something">Working with API</li>
+            <li class="skills__item--something">NPM Scripts</li>
+            <li class="skills__item--something">Progressive web apps</li>
+            <li class="skills__item--something">Git</li>
+            <li class="skills__item--something">Accessibility</li>
           </ul>
         </section>
         <section class="skills__section">
@@ -88,15 +89,16 @@
             <span class="skills__title--emoji">🎓</span>Want to learn
           </h2>
           <ul>
-            <li>React JS</li>
-            <li>Node JS</li>
-            <li>Electron</li>
-            <li>Server sode rendering</li>
-            <li>Typescript</li>
-            <li>Gatsby</li>
-            <li>Websockets</li>
+            <li class="skills__item--toLearn">WordPress</li>
+            <li class="skills__item--toLearn">React JS</li>
+            <li class="skills__item--toLearn">Amgular JS</li>
+            <li class="skills__item--toLearn">Typescript</li>
+            <li class="skills__item--toLearn">Gatsby</li>
+            <li class="skills__item--toLearn">Anything necessary</li>
           </ul>
+        
         </section>
+      </div>
       </section>
       <section class="projects" id="projects">
         <h1 class="projects__header">Recent projects</h1>
@@ -114,22 +116,74 @@
             <div class="project__container">
               <img class="project__icon" src="../assets/icons/Github Icon.png" alt="">
               <h3 class="project__title project__grid">
-                <span class="project__label">project:</span><span class="project__name">podlaski git</span>
+                <span class="project__label">project:</span><span class="project__name">Hydrapp</span>
               </h3>
               <p class="project__description project__grid">
                 <span class="project__label">description:</span
-                ><span class="project__info">podlaskie aliasy dla gitowych komend</span>
+                ><span class="project__info">Stay healthy, stay hydrated! Simply glass counter. Never forget to drink enough water again.  </span>
               </p>
               <p class = "project__grid">
                 <span class="project__label">demo:</span
-                ><a class="project__link" href="#" title="podlaski git demo"> &lt;see here&gt;</a>
+                ><a class="project__link" href="https://gorskimarcin8.github.io/hydrapp/" title="podlaski git demo"> &lt;see here&gt;</a>
               </p>
               <p class = "project__grid">
                 <span class="project__label">github:</span>
-                <a class="project__link" href="#" title="podlaski git kod źródłowy">
+                <a class="project__link" href="https://github.com/gorskimarcin8/hydrapp" title="podlaski git kod źródłowy">
                   &lt;source code&gt;</a>
               </p>
               </div>
+            </article>
+          <article class="project">
+              <div class="project__window">
+                <span class="project__window--dot"></span>
+                <span class="project__window--dot"></span>
+                <span class="project__window--dot"></span>
+              </div>
+              <div class="project__container">
+                <img class="project__icon" src="../assets/icons/Github Icon.png" alt="">
+                <h3 class="project__title project__grid">
+                  <span class="project__label">project:</span><span class="project__name">Hydrapp</span>
+                </h3>
+                <p class="project__description project__grid">
+                  <span class="project__label">description:</span
+                  ><span class="project__info">Stay healthy, stay hydrated! Simply glass counter. Never forget to drink enough water again.  </span>
+                </p>
+                <p class = "project__grid">
+                  <span class="project__label">demo:</span
+                  ><a class="project__link" href="https://gorskimarcin8.github.io/hydrapp/" title="podlaski git demo"> &lt;see here&gt;</a>
+                </p>
+                <p class = "project__grid">
+                  <span class="project__label">github:</span>
+                  <a class="project__link" href="https://github.com/gorskimarcin8/hydrapp" title="podlaski git kod źródłowy">
+                    &lt;source code&gt;</a>
+                </p>
+                </div>
+            </article>
+          <article class="project">
+              <div class="project__window">
+                <span class="project__window--dot"></span>
+                <span class="project__window--dot"></span>
+                <span class="project__window--dot"></span>
+              </div>
+              <div class="project__container">
+                <img class="project__icon" src="../assets/icons/Github Icon.png" alt="">
+                <h3 class="project__title project__grid">
+                  <span class="project__label">project:</span><span class="project__name">Hydrapp</span>
+                </h3>
+                <p class="project__description project__grid">
+                  <span class="project__label">description:</span
+                  ><span class="project__info">Stay healthy, stay hydrated! Simply glass counter. Never forget to drink enough water again.  </span>
+                </p>
+                <p class = "project__grid">
+                  <span class="project__label">demo:</span
+                  ><a class="project__link" href="https://gorskimarcin8.github.io/hydrapp/" title="podlaski git demo"> &lt;see here&gt;</a>
+                </p>
+                <p class = "project__grid">
+                  <span class="project__label">github:</span>
+                  <a class="project__link" href="https://github.com/gorskimarcin8/hydrapp" title="podlaski git kod źródłowy">
+                    &lt;source code&gt;</a>
+                </p>
+                </div>
             </article>
           </div>
         </div>
@@ -137,7 +191,7 @@
       <section class="contact" id="contact">
         <h1 class="contact__header">Contact me</h1>
         <p class="contact__description">
-          I’m open for new opportunities. If you have one for me we should talk!
+          I’m open to new opportunities. If you have one for me, we should talk!
         </p>
         <div class="contact__links">
           <ul class="socials">

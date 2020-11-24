@@ -34,6 +34,10 @@ p {
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 40px;
+  }
 }
 
 .email__button {
