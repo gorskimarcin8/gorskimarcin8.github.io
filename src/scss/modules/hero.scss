@@ -6,7 +6,11 @@
     margin: 0 auto;
   }
 
+  @media (min-width: $desktop) {
+    max-width: 100%;
+  }
 
+//AVATAR====-------
 
   &__welcome--container {
     display: none; 
@@ -53,6 +57,35 @@
     }
   }
 
+//TEXT-CONTENT========----------
+
+  &__article {
+    @media (min-width: $desktop) {
+      max-width: 786px;
+      margin: 0 auto;
+      position: relative;
+
+      &::before, &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        width: 83.23px;
+        height: 254.88px;
+        background: $contactBackgroundBlue;
+      }
+      &::before {
+        right: 100%;
+        background: url('../assets/icons/left-bracket.svg');
+      }
+
+      &::after {
+        left: 100%;
+        background: url('../assets/icons/right-bracket.svg');
+      }
+
+    }
+  }
+
   &__header {
     @media (min-width: $tablet){
       font-size: 32px;
@@ -67,3 +100,4 @@
     color: $link;
   }
 }
+

@@ -1,9 +1,28 @@
-.projects__grid {
-  display: grid;
-  column-gap: 24px;
-  row-gap: 24px;
-  @media (min-width: $tablet) {
-    grid-template-columns: 1fr 1fr;
+.projects {
+  &__header {
+    @media (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+  &__paragraph {
+    max-width: 786px;
+    margin: 0 auto;
+    margin-bottom: 108px;
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+  &__grid {
+    display: grid;
+    column-gap: 24px;
+    row-gap: 24px;
+    @media (min-width: $desktop) {
+      grid-template-columns: 1fr 1fr;
+      max-width: 1184px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -35,12 +54,20 @@
   &__container {
     text-align: left;
     padding: 24px 16px;
+    @media (min-width: $desktop) {
+      padding: 24px 48px;
+      padding-bottom: 58px;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 102px 1fr;
     column-gap: 8px;
+    @media (min-width: $desktop) {
+      grid-template-columns: 120px 1fr;
+      column-gap: 4px;
+    }
   }
 
   &__label {
@@ -50,6 +77,9 @@
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
+    @media (min-width: $desktop) {
+      font-size: 16px;
+    }
   }
 
   &__link,
@@ -57,6 +87,15 @@
   &__info {
     font-size: 13px;
     line-height: 24px;
+    @media (min-width: $desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__info {
+    @media (min-width: $desktop) {
+      margin-bottom: 24px;
+    }
   }
 
   &__link {

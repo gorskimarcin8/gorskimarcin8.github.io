@@ -5,6 +5,9 @@
     @media (min-width: $desktop) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1184px;
+      margin: 0 auto;
+   
     }
   }
 
@@ -20,8 +23,8 @@
   }
 
   &__section {
-    text-align: center;
     padding: 2px;
+    max-width: 427px;
   }
   &__title {
     font-size: 24px;
